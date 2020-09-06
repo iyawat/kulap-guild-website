@@ -195,7 +195,7 @@ export default {
 
 <style lang="scss">
 .container {
-  width: 80%;
+  width: auto;
 }
 
 .flex {
@@ -230,7 +230,7 @@ export default {
 }
 
 .hero {
-  display: block;
+  display: flex;
   padding-bottom: 100px;
 
   &.no-padding {
@@ -435,16 +435,11 @@ export default {
   }
 
   #icon-mobile {
-    display: block;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
+    display: none;
   }
 
   #icon-desktop {
-    display: none;
+    display: block;
   }
 
   .content-text {
