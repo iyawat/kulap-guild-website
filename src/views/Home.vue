@@ -22,14 +22,14 @@
     </div>
   </section>
 
-  <section class="hero hero-border is-small">
-    <div class="columns is-flex is-multiline is-centered is-mobile is-8">
+  <section class="hero hero-border is-small no-padding">
+    <div class="columns is-flex is-multiline is-centered is-mobile is-8 no-padding">
       <div class="column is-half-desktop is-half-tablet is-full-mobile one">
         <div class="container about-content">
           <p class="content-title"> About </p>
           <p class="content-title" style="color: #29419B;"> KULAP </p>
           <p class="content-title"> Guild </p>
-          <hr class="divider" style="width: 310px;">
+          <hr class="divider" style="width: 50vw; max-width: 310px;">
           <p class="content-text"> Since 2020, we've seen the web undergoing reinvention - all centered around blockchain and data. A movement that started with Bitcoin gains momentum along with Ethereum, and eventually, spawned more and more protocols which all focusing on a better web. </p>
           <br>
           <p class="content-text"> The open web includes a vision of decentralized web - where, among other things, large corporations are not custodians of or profiting from our data, intermediaries are eliminated, and censorship is just only old school memory. The future is coming and you can be a part of it. </p>
@@ -234,7 +234,7 @@ export default {
   padding-bottom: 100px;
 
   &.no-padding {
-    padding-bottom: 0;
+    padding: 0 !important;
   }
 }
 
@@ -249,6 +249,7 @@ export default {
   width: 600 px;
   left: 20%;
   top: 30%;
+  padding-bottom: 20%;
 }
 
 .hero-image {
@@ -357,10 +358,11 @@ export default {
 }
 
 // Mobile
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
 
   .title-text {
     font-size: 20px;
+    margin-left: -5px;
   }
 
   .hero-image {
@@ -409,6 +411,11 @@ export default {
   .near-text,
   .columns {
     padding: 0 20px;
+
+    &.no-padding {
+      padding: 0;
+      padding-bottom: 100px;
+    }
   }
 
   .near-title {
@@ -417,35 +424,14 @@ export default {
 
 }
 
-// iPad
-@media only screen and (min-width: 501px) and (max-width: 768px) {
+// iPad Pro
+@media only screen and (min-width: 769px) and (max-width: 1408px) {
   .title-text {
     font-size: 25px;
   }
 
-  #icon-mobile {
-    display: block;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-  }
-
-  #icon-desktop {
-    display: none;
-  }
-
-  .content-text {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-}
-
-// iPad & Small Computer
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .title-text {
-    font-size: 25px;
+  .about-content {
+    padding-bottom: 200px;
   }
 
   #icon-mobile {
@@ -468,5 +454,9 @@ export default {
 }
 
 // Big Screen
-@media only screen and (min-width: 1025px) {}
+@media only screen and (min-width: 1025px) {
+  .about-content {
+    padding-bottom: 200px;
+  }
+}
 </style>
