@@ -17,7 +17,11 @@ library.add(fab)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(Buefy, { defaultIconPack: 'fas' })
 
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+import VueGtag from "vue-gtag";
+
+Vue.use(VueGtag, {
+  config: { id: "UA-141672389-5" }
+});
 
 Vue.config.productionTip = false
 

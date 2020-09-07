@@ -33,6 +33,9 @@ $colors: ("white": ($white, $black),
 #app,
 html,
 body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #29419B;

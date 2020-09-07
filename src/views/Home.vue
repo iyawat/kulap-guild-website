@@ -12,10 +12,12 @@
           <img class="logo" src="img/guild-logo.png" />
         </div>
         <div class="column is-one-third has-text-centered">
-          <b-button id="icon-desktop" icon-pack="fab" icon-left="facebook-f" type="is-kulap" inverted rounded size="is-medium">
-            Join Our Guild
-          </b-button>
-          <font-awesome-icon id="icon-mobile" :icon="['fab','facebook']" style="color: #FFF; height: 30px; width: 30px;" />
+          <a href="https://www.facebook.com/groups/neardev" target="_blank">
+            <b-button id="icon-desktop" icon-pack="fab" icon-left="facebook-f" type="is-kulap" inverted rounded size="is-medium">
+              Join Our Guild
+            </b-button>
+            <font-awesome-icon id="icon-mobile" :icon="['fab','facebook']" style="color: #FFF; height: 30px; width: 30px;" />
+          </a>
         </div>
       </div>
     </div>
@@ -103,9 +105,11 @@
       <p class="near-text"> In order for decentralized applications to make a big impact on the world, they have to be easy to build, use, and maintain even when they scale to millions of users. </p>
     </section>
     <section class="has-text-centered">
-      <b-button icon-pack="fas" icon-right="arrow-circle-right" type="is-pink" rounded size="is-medium">
-        Go to near website
-      </b-button>
+      <a href="https://near.org/" target="_blank">
+        <b-button icon-pack="fas" icon-right="arrow-circle-right" type="is-pink" rounded size="is-medium">
+          Go to near website
+        </b-button>
+      </a>
     </section>
   </section>
 
@@ -123,9 +127,11 @@
         <div class="container hero-content">
           <p class="content-title" style="font-size:20px;"> Blockchain Developer Community in Thailand </p><br><br>
           <p class="content-text" style="font-size:15px; max-width: 550px; line-height: 1.5;"> We are a group of developers in Thailand interested in blockchain technology. Previously, we had another community called KatinRun that is also a blockchain developer group. But focus on the ethereum platform. </p> <br><br>
-          <b-button icon-pack="fas" icon-right="arrow-circle-right" type="is-kulap" rounded size="is-medium">
-            Join Our Guild
-          </b-button>
+          <a href="https://www.facebook.com/groups/neardev" target="_blank">
+            <b-button icon-pack="fas" icon-right="arrow-circle-right" type="is-kulap" rounded size="is-medium">
+              Join Our Guild
+            </b-button>
+          </a>
         </div>
       </div>
     </div>
@@ -367,6 +373,7 @@ export default {
   .hero-image {
     width: 100%;
   }
+
   .hero-content {
     padding: 0 10px;
   }
@@ -453,7 +460,7 @@ export default {
 // Big Screen
 @media only screen and (min-width: 1025px) {
   .about-content {
-    padding-bottom: 200px;
+    padding-bottom: 300px;
   }
 }
 </style>
