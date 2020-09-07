@@ -15,8 +15,7 @@
           <b-button id="icon-desktop" icon-pack="fab" icon-left="facebook-f" type="is-kulap" inverted rounded size="is-medium">
             Join Our Guild
           </b-button>
-          <b-button id="icon-mobile" icon-pack="fab" icon-left="facebook-f" type="is-kulap" inverted rounded size="is-medium">
-          </b-button>
+          <font-awesome-icon id="icon-mobile" :icon="['fab','facebook']" style="color: #FFF; height: 30px; width: 30px;" />
         </div>
       </div>
     </div>
@@ -29,7 +28,7 @@
           <p class="content-title"> About </p>
           <p class="content-title" style="color: #29419B;"> KULAP </p>
           <p class="content-title"> Guild </p>
-          <hr class="divider" style="width: 50vw; max-width: 310px;">
+          <hr class="divider" style="width: 50vw; min-width: 255px; max-width: 310px;">
           <p class="content-text"> Since 2020, we've seen the web undergoing reinvention - all centered around blockchain and data. A movement that started with Bitcoin gains momentum along with Ethereum, and eventually, spawned more and more protocols which all focusing on a better web. </p>
           <br>
           <p class="content-text"> The open web includes a vision of decentralized web - where, among other things, large corporations are not custodians of or profiting from our data, intermediaries are eliminated, and censorship is just only old school memory. The future is coming and you can be a part of it. </p>
@@ -367,6 +366,9 @@ export default {
 
   .hero-image {
     width: 100%;
+  }
+  .hero-content {
+    padding: 0 10px;
   }
 
   .one {
