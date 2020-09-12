@@ -53,17 +53,17 @@
       <div class="column is-one-thrid-desktop is-one-third-tablet is-full-mobile service-box">
         <div class="circle"> <img src="img/img_icon_coding.png" class="service-img" /> </div><br>
         <p class="service-text-title has-text-centered"> Blockchain Developer Stimulating </p><br>
-        <p class="service-text"> The guild seeks apprentice, journeyman, or master developers interested in using or learning how to use NEAR protocol, RUST/AssemblyScript, React and related technologies to build incredible open web user experiences. </p>
+        <p class="service-text"> As we are community based environment, we can help each other to encourage members, providing technology and knowledge, becomes the motivation for members result in the quality NEAR based software, product, or even more, platform. </p>
       </div>
       <div class="column is-one-thrid-desktop is-one-third-tablet is-full-mobile service-box">
         <div class="circle"> <img src="img/img_icon_community.png" class="service-img" /> </div><br>
         <p class="service-text-title has-text-centered"> Community Establising </p><br>
-        <p class="service-text"> The guild is growing an inclusive community with useful resources and a platform where every guildsperson contributes to the success of the guild and is rewarded for the important role they play in helping solve real-world issues while building the open web future. </p>
+        <p class="service-text"> Our guild is the aggregation of the people which primary interest is NEAR protocol and related such as React, RUST/AssemblyScript. Together, we can develop the powerful blockchain community. </p>
       </div>
       <div class="column is-one-thrid-desktop is-one-third-tablet is-full-mobile service-box">
         <div class="circle"> <img src="img/img_icon_dapp.png" class="service-img" /> </div><br>
         <p class="service-text-title has-text-centered"> DApp Development </p><br>
-        <p class="service-text"> Community and resources leveraging NEAR Protocol to learn Dapp development while building solutions that address real-world challenges. </p>
+        <p class="service-text"> DApp could be the best illustration result of the outcome product so our community will pay primary focusing on DApp development derived from NEAR Protocol knowledge and technology. </p>
       </div>
     </div>
   </section>
@@ -166,7 +166,7 @@
   <div class="row flex title-bar">
     <div class="columns is-vcentered is-centered">
       <p class="content-title-white"> KULAP NEAR </p>
-      <p class="content-title-white" style="font-weight: 400; padding-left: 30px;"> All rights reserved. </p>
+      <p class="content-title-white footer-content"> All rights reserved. </p>
     </div>
   </div>
 
@@ -186,11 +186,11 @@ export default {
         },
         {
           title: 'Does my Guild have to be focused only on NEAR?',
-          text: `No, your Guild can be focused on specific tech stack or programming language, social sciences with a connection to the open web, or anything in between. It can be a validator community, a market-driven community or a developer community. It can be based broadly around interesting new technologies or specifically about the NEAR platform. The goal of this program is to drive interest and engagement to the open web ecosystem. The incentives will most strongly reward those guilds who have strong alignment with the NEAR ecosystem but there is no requirement that the guild be 100% focused on NEAR.`
+          text: `No, your Guild can be focused on specific tech stack or programming language, social sciences with a connection to the open web, or anything in between. It can be a validator community, a market-driven community or a developer community. It can be based broadly around interesting new technologies or specifically about the NEAR platform. The goal of this program is to drive interest and engagement to the open web ecosystem. The incentives will most strongly reward those guilds who have strong alignment with the NEAR ecosystem but there is no requirement that the guild be 100% focused on NEAR. As we can see it clear, this is NEAR based community, thus, we primary focus on NEAR protocol. But to be honest, from connections we gathering together, this may lead to another opportunity.`
         },
         {
           title: 'What benefits will those who join the guild get?',
-          text: 'Text 3'
+          text: 'The best benefit always knowledge. Moreover, the side benefit is the connection among members in the guild. Last but not least, we may boost our community with amount of NEAR token as a bounty and activity reward.'
         }
       ]
     }
@@ -355,7 +355,9 @@ export default {
 }
 
 .footer-content {
-  background: #29419B;
+  // background: #29419B;
+  font-weight: 400; 
+  padding-left: 30px;
 }
 
 #icon-mobile {
@@ -364,6 +366,10 @@ export default {
 
 // Mobile
 @media only screen and (max-width: 768px) {
+
+  .flex {
+    display: block;
+  }
 
   .title-text {
     font-size: 20px;
@@ -430,6 +436,10 @@ export default {
   .near-title {
     font-size: 15px;
   }
+
+  .footer-content {
+  padding-left: 0;
+}
 
 }
 
