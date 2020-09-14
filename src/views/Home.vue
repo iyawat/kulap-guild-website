@@ -121,7 +121,7 @@
     </div><br>
     <div class="columns is-multiline is-mobile">
       <div class="column is-half-desktop is-half-tablet is-full-mobile">
-        <img class="hero-image" src="img/team.png" />
+        <img class="hero-image" src="img/team2.png" />
       </div>
       <div class="column is-half-desktop is-half-tablet is-full-mobile">
         <div class="container hero-content">
